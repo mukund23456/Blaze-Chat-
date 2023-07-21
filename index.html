@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App- Realtime Chat Application </title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav>
+        <div class="flex-container">
+        <h1>Blaze Chat-Connect People </h1>
+        <img alt=""src="icon.png" class="logo">
+        <button onclick="myFunction()" id="togglebtn">Dark mode</button>
+    </div>
+        
+    </nav>
+    <div class="cont">
+        
+    </div>
+<div class="send">
+    <form action="#" id="send-cont">
+        <input type="text" id="messageinp" name="message"placeholder="Enter your message" />
+        <button type="submit" class="btn">Send</button>
+    </form>
+</div>
+
+     
+    <script>
+        function myFunction() {
+            let element = document.body;
+            element.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>
